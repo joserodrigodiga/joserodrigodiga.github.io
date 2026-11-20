@@ -11,12 +11,12 @@
 <style>
 :root{
   --bg:#f7f8f5; --surface:#ffffff; --text:#1d2a26; --muted:#5b6b65;
-  --accent:#1f6f5c; --accent-soft:#e1efe9; --line:#d9e0db;
+  --accent:#9a6b00; --accent-soft:#fbf0cc; --line:#d9e0db;
 }
 @media (prefers-color-scheme:dark){
   :root{
     --bg:#121917; --surface:#1a2420; --text:#e8efec; --muted:#9fb0a9;
-    --accent:#5fc4a6; --accent-soft:#1f3a32; --line:#2c3a35;
+    --accent:#f2c94c; --accent-soft:#3a3216; --line:#2c3a35;
   }
 }
 *{box-sizing:border-box}
@@ -91,8 +91,8 @@ footer{border-top:1px solid var(--line); margin-top:2rem; padding:1.5rem 0 2.5re
   <div class="wrap">
 
     <div class="hero">
-      <h1>I turn sales data into menu decisions.</h1>
-      <p>Hi, I'm JR, an aspiring data analyst. I use Excel, SQL and Looker Studio to answer business questions with clear, honest analysis.</p>
+      <h1>Clean records.<br>Clear numbers.</h1>
+      <p>Hi, I'm JR, an aspiring data analyst. I use Excel, SQL and Data Visualization tools to answer business questions with clear and honest analysis.</p>
       <div class="btns">
         <a class="btn primary" href="#projects">View projects</a>
         <a class="btn ghost" href="#contact">Get in touch</a>
@@ -102,8 +102,9 @@ footer{border-top:1px solid var(--line); margin-top:2rem; padding:1.5rem 0 2.5re
     <section id="projects">
       <h2>Featured project</h2>
       <div class="question">
-        <strong>Which KSimple items should join the 2027 menu?</strong>
-        <p>A 3-part analysis of 18 months of daily sales to help choose items for a new store opening in 2027.</p>
+        <strong>Menu Performance Analysis for 2027 Store Planning</strong>
+        <p>A 3-part analysis of 13 months of daily sales to help choose items for the new store planned to open in 2027.</p>
+        <p class="note">Data note: Figures are scaled to protect the business owner's financial information. Rankings, trends and shares reflect the real patterns.</p>
       </div>
     </section>
 
@@ -113,7 +114,7 @@ footer{border-top:1px solid var(--line); margin-top:2rem; padding:1.5rem 0 2.5re
         <p class="tools">Excel (functions only)</p>
         <p>Cleaned and checked the data, then ranked sandwiches and rice toppers on average daily units, trend and consistency. Compared add-on and overload value across items. Built a dashboard with KPIs, candidates and 3 charts.</p>
         <span class="status">Complete</span> &middot;
-        <a href="https://github.com/yourusername/ksimple-menu-analysis">View on GitHub</a>
+        <a href="https://github.com/joserodrigodiga/kfh-menu-analysis">View on GitHub</a>
       </div>
 
       <div class="project todo">
@@ -134,10 +135,11 @@ footer{border-top:1px solid var(--line); margin-top:2rem; padding:1.5rem 0 2.5re
     <section>
       <h2>Key findings from Project 1</h2>
       <ul class="finds">
-        <li>Top candidates: [Top 2 sandwiches] and [Top 3 rice toppers].</li>
-        <li>[Item name] led with [X] average daily units.</li>
-        <li>[Category] made up [X]% of revenue.</li>
-        <li>[Add-on or overload insight, for example S1 vs. S3].</li>
+        <li>Top candidates: S4 and S2 for sandwiches and RT5, RT1, and RT4 for rice toppers.</li>
+        <li>S4 Sandwich-Combo led with 4.1 average daily units.</li>
+        <li>Sandwich-Combo made up 39% of revenue.</li>
+        <li>Solo vs. Combo (Sandwich): Combos made up ~60% of sandwich units sold.</li>
+        <li>Overload Topper (RT5) vs. Solo Toppers (RT1-RT4): Overload Topper sold 202% more than the average of Solo Toppers.</li>
       </ul>
       <p class="note">Results are candidates, pending margin review, owner feedback, prep time and ingredient availability.</p>
     </section>
@@ -145,9 +147,9 @@ footer{border-top:1px solid var(--line); margin-top:2rem; padding:1.5rem 0 2.5re
     <section>
       <h2>Limitations I state up front</h2>
       <ul class="finds">
-        <li>No cost data, so profitability was not analyzed.</li>
-        <li>Rice toppers have a shorter history (since Sep 2025).</li>
-        <li>Cannibalization and year-over-year seasonality were not tested.</li>
+        <li>Items were ranked by sales performance, not profit.</li>
+        <li>Rice toppers launched in September 2025, so they have less history than sandwiches.</li>
+        <li>The franchised business sales may affect the items sales. This could not be measured.</li>
       </ul>
     </section>
 
@@ -158,6 +160,7 @@ footer{border-top:1px solid var(--line); margin-top:2rem; padding:1.5rem 0 2.5re
         <li>SQL</li>
         <li>Looker Studio</li>
         <li>Google Sheets</li>
+        <li>Data Analysis</li>
         <li>Data cleaning</li>
         <li>Dashboards</li>
         <li>Business insights</li>
@@ -168,7 +171,7 @@ footer{border-top:1px solid var(--line); margin-top:2rem; padding:1.5rem 0 2.5re
       <h2>Contact</h2>
       <p>Open to entry-level data analyst roles.</p>
       <p>
-        <a href="mailto:joserodrigodiga@gmail.com">joserodrigodiga@gmail.com</a><br>
+        <a href="mailto:joserodrigodiga@gmail.com">Email</a><br>
         <a href="https://www.linkedin.com/in/jrdiga">LinkedIn</a><br>
         <a href="https://github.com/joserodrigodiga">GitHub</a>
       </p>
