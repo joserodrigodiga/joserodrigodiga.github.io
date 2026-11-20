@@ -29,7 +29,7 @@ body{
 a{color:var(--accent)}
 a:focus-visible,button:focus-visible{outline:3px solid var(--accent); outline-offset:2px}
 header.top{border-bottom:1px solid var(--line)}
-header.top .wrap{display:flex; justify-content:space-between; align-items:center; padding-top:1rem; padding-bottom:1rem}
+header.top .wrap{display:flex; justify-content:space-between; align-items:center; padding-top:.7rem; padding-bottom:.7rem}
 .brand{font-family:Fraunces,Georgia,serif; font-weight:700; text-decoration:none; color:var(--text)}
 nav a{margin-left:1rem; text-decoration:none; color:var(--muted); font-size:.95rem}
 nav a:hover{color:var(--accent)}
@@ -89,6 +89,8 @@ nav a:active{color:var(--accent)}
 @media (prefers-color-scheme:dark){.project{box-shadow:0 4px 14px rgba(0,0,0,.4)}}
 header.top{position:sticky; top:0; z-index:10; background:var(--bg)}
 section{scroll-margin-top:70px}
+nav a.active{color:var(--accent)}
+nav a.active::after{transform:scaleX(1)}
 </style>
 </head>
 <body>
@@ -204,5 +206,16 @@ section{scroll-margin-top:70px}
   <div class="wrap">&copy; 2026 Jose Rodrigo Diga</div>
 </footer>
 
+<script>
+const links=document.querySelectorAll('nav a');
+const obs=new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      links.forEach(l=>l.classList.toggle('active',l.getAttribute('href')==='#'+e.target.id));
+    }
+  });
+},{rootMargin:'-40% 0px -55% 0px'});
+links.forEach(l=>{const s=document.querySelector(l.getAttribute('href')); if(s) obs.observe(s);});
+</script>
 </body>
 </html>
