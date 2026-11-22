@@ -30,12 +30,12 @@ a{color:var(--accent)}
 a:focus-visible,button:focus-visible{outline:3px solid var(--accent); outline-offset:2px}
 header.top{border-bottom:1px solid var(--line)}
 header.top .wrap{display:flex; justify-content:space-between; align-items:center; padding-top:.7rem; padding-bottom:.7rem}
-.brand{font-family:Fraunces,Georgia,serif; font-weight:700; text-decoration:none; color:var(--text)}
+.brand{font-family:Montserrat,system-ui,sans-serif; font-weight:700; text-decoration:none; color:var(--text)}
 nav a{margin-left:1rem; text-decoration:none; color:var(--muted); font-size:.95rem}
 nav a:hover{color:var(--accent)}
 .hero{padding:3.5rem 0 2.5rem}
 .hero h1{
-  font-family:Fraunces,Georgia,serif; font-weight:700;
+  font-family:Montserrat,system-ui,sans-serif; font-weight:700;
   font-size:clamp(2rem,7vw,3.1rem); line-height:1.15; margin:0 0 1rem; letter-spacing:-.01em;
 }
 .hero p{font-size:1.1rem; color:var(--muted); max-width:60ch; margin:0 0 1.5rem}
@@ -48,12 +48,12 @@ nav a:hover{color:var(--accent)}
 .btn.primary{background:var(--accent); color:var(--bg)}
 .btn.ghost{color:var(--accent)}
 section{padding:2rem 0}
-h2{font-family:Fraunces,Georgia,serif; font-size:1.6rem; margin:0 0 1rem}
+h2{font-family:Montserrat,system-ui,sans-serif; font-size:1.6rem; margin:0 0 1rem}
 .question{
   background:var(--accent-soft); border-left:4px solid var(--accent);
   padding:1.25rem 1.25rem; border-radius:0 10px 10px 0;
 }
-.question strong{font-family:Fraunces,Georgia,serif; font-size:1.25rem; display:block; margin-bottom:.4rem}
+.question strong{font-family:Montserrat,system-ui,sans-serif; font-size:1.25rem; display:block; margin-bottom:.4rem}
 .question p{margin:0; color:var(--muted)}
 .project{
   background:var(--surface); border:1px solid var(--line); border-radius:10px;
@@ -75,7 +75,6 @@ ul.finds li{margin-bottom:.5rem}
 .note{color:var(--muted); font-size:.9rem}
 .data-note{color:var(--muted); font-size:.8rem; margin:.75rem 0 0}
 footer{border-top:1px solid var(--line); margin-top:2rem; padding:1.5rem 0 2.5rem; color:var(--muted); font-size:.9rem}
-.hero h1,h2,.brand,.question strong{font-family:Montserrat,system-ui,sans-serif}
 nav a{position:relative; padding:.25rem 0}
 nav a::after{content:""; position:absolute; left:0; bottom:0; width:100%; height:2px; background:var(--accent); transform:scaleX(0); transform-origin:left; transition:transform .25s}
 nav a:hover::after,nav a:focus-visible::after,nav a:active::after{transform:scaleX(1)}
@@ -132,7 +131,7 @@ section{scroll-margin-top:70px}
       <div class="project">
         <h3>1. Menu Performance Analysis</h3>
         <p class="tools">Excel (functions only)</p>
-        <img class="thumb" src="excel-dashboard.jpg" alt="Excel dashboard with KPIs, candidates and charts" loading="lazy">
+        <img class="thumb" src="excel-db-thumbnail.png" alt="Excel dashboard with KPIs, candidates and charts" loading="lazy">
         <p>Cleaned and checked the data, then ranked sandwiches and rice toppers on average daily units, trend and consistency. Compared add-on and overload value across items. Built a dashboard with KPIs, candidates and 3 charts.</p>
         <span class="status">Complete</span> &middot;
         <a href="https://github.com/joserodrigodiga/excel-menu-performance-analysis">View on GitHub</a>
@@ -141,7 +140,7 @@ section{scroll-margin-top:70px}
       <div class="project">
         <h3>2. SQL Menu Questions</h3>
         <p class="tools">SQL (SQLite)</p>
-        <img class="thumb" src="sql-thumbnail.png" alt="SQL Trend query and result" loading="lazy">
+        <img class="thumb" src="sql-trend-thumbnail.png" alt="SQL Trend query and result" loading="lazy">
         <p>10 queries covering sales by category, top items, trend, consistency, zero-sale days and add-on value. Results are cross-checked against the Excel calculations.</p>
         <span class="status">Complete</span> &middot;
         <a href="https://github.com/joserodrigodiga/sql-menu-performance-analysis">View on GitHub</a>
@@ -151,7 +150,7 @@ section{scroll-margin-top:70px}
         <h3>3. Interactive Dashboard</h3>
         <p class="tools">Looker Studio, Google Sheets</p>
         <p>An interactive version of the analysis with date, category and item filters.</p>
-        <span class="status">Coming soon</span>
+        <span class="status">In progress</span>
       </div>
     </section>
 
