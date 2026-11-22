@@ -1,1 +1,23 @@
-# joserodrigodiga.github.io
+# JR | Data Analyst Portfolio
+
+Portfolio website of JR, an aspiring data analyst.
+
+**Live site:** https://joserodrigodiga.github.io
+
+## Projects
+1. [Menu Performance Analysis (Excel)](https://github.com/joserodrigodiga/excel-menu-performance-analysis)
+2. [SQL Menu Questions (SQL)](https://github.com/joserodrigodiga/sql-menu-performance-analysis)
+3. Interactive Dashboard (Looker Studio), in progress
+
+## Tools
+Excel, SQL, Looker Studio
+
+## About this site
+Built with HTML and CSS, and hosted on GitHub Pages.
+
+## Data note
+Project data is scaled to protect the business owner's financial information. Rankings, trends and shares reflect the real patterns.
+
+## Contact
+- LinkedIn: [https://www.linkedin.com/in/jrdiga]
+- Email: [joserodrigodiga@gmail.com]
