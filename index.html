@@ -80,20 +80,22 @@ nav a::after{content:""; position:absolute; left:0; bottom:0; width:100%; height
 nav a:hover::after,nav a:focus-visible::after,nav a:active::after{transform:scaleX(1)}
 nav a:active{color:var(--accent)}
 @media (prefers-reduced-motion:reduce){nav a::after{transition:none}}
-.avatar{box-shadow:0 0 0 4px var(--bg), 0 0 0 7px var(--accent), 0 8px 20px rgba(0,0,0,.2)}
-.btn{box-shadow:0 3px 10px rgba(0,0,0,.20); transition:transform .15s, box-shadow .15s}
-.btn:hover{transform:translateY(-2px); box-shadow:0 6px 14px rgba(0,0,0,.2)}
-@media (prefers-color-scheme:dark){.btn{box-shadow:0 3px 10px rgba(0,0,0,.5)}}
-.project{box-shadow:0 4px 14px rgba(0,0,0,.12)}
-.project.todo{box-shadow:none}
-@media (prefers-color-scheme:dark){.project{box-shadow:0 4px 14px rgba(0,0,0,.4)}}
 header.top{position:sticky; top:0; z-index:10; background:var(--bg)}
 section{scroll-margin-top:70px}
+.avatar{box-shadow:0 0 0 4px var(--bg), 0 0 0 7px var(--accent), 0 8px 20px rgba(0,0,0,.2)}
 .profile{display:flex; align-items:center; gap:1.25rem; margin-bottom:1.5rem}
 .profile .avatar{margin-bottom:0; flex-shrink:0}
 .who{display:block; font-family:Montserrat,sans-serif; font-size:1.2rem; font-weight:700}
 .role{display:block; color:var(--accent); font-size:.85rem; font-weight:600}
 .tools-line{display:block; color:var(--muted); font-size:.85rem; margin-top:.15rem}
+.btn{box-shadow:0 3px 10px rgba(0,0,0,.20); transition:transform .15s, box-shadow .15s}
+.btn:hover{transform:translateY(-2px); box-shadow:0 6px 14px rgba(0,0,0,.2)}
+@media (prefers-color-scheme:dark){.btn{box-shadow:0 3px 10px rgba(0,0,0,.5)}}
+.question .data-note{margin-top:1rem; padding-top:.9rem; border-top:1px solid var(--line); font-size:.8rem; line-height:1.5}
+.data-note strong{color:var(--accent); font-family:Inter,sans-serif; font-size:.8rem; display:inline}
+.project{box-shadow:0 4px 14px rgba(0,0,0,.12)}
+.project.todo{box-shadow:none}
+@media (prefers-color-scheme:dark){.project{box-shadow:0 4px 14px rgba(0,0,0,.4)}}
 </style>
 </head>
 <body>
@@ -136,7 +138,7 @@ section{scroll-margin-top:70px}
         <strong>Menu Performance Analysis for 2027 Store Planning</strong>
         <p>A 3-part analysis of 13 months of daily sales to help choose items for the new store planned to open in 2027.</p>
         <p> </p>
-        <p class="data-note">Data note: Figures are scaled to protect the business owner's financial information. Rankings, trends and shares reflect the real patterns.</p>
+        <p class="data-note"><strong>Data note:</strong> Figures are scaled to protect the business owner's financial information. Rankings, trends and shares reflect the real patterns.</p>
       </div>
     </section>
 
