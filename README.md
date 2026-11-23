@@ -7,9 +7,9 @@ Portfolio website of JR, an aspiring data analyst.
 ## Projects
 **Menu Performance Analysis for 2027 Store Planning**
 
-1. [Menu Performance Analysis (Excel)](https://github.com/joserodrigodiga/excel-menu-performance-analysis)
-2. [SQL Menu Questions (SQL)](https://github.com/joserodrigodiga/sql-menu-questions)
-3. Interactive Dashboard (Looker Studio), in progress
+Part 1: [Menu Performance Analysis (Excel)](https://github.com/joserodrigodiga/excel-menu-performance-analysis)
+Part 2: [SQL Menu Questions (SQL)](https://github.com/joserodrigodiga/sql-menu-questions)
+Part 3: Interactive Dashboard (Looker Studio), in progress
 
 ## Tools
 Excel, SQL, Looker Studio
