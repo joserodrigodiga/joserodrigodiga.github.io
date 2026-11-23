@@ -103,6 +103,8 @@ p,li{max-width:70ch}
   .cards .project{margin-bottom:0}
 }
 .cards .project p:not(.tools){font-size:.95rem}
+.cards .project{display:flex; flex-direction:column}
+.card-foot{margin-top:auto; padding-top:.75rem}
 @media (min-width:900px){
   body{font-size:1.05rem}
   .hero{padding:5rem 0 3.5rem}
@@ -168,8 +170,10 @@ p,li{max-width:70ch}
         <p class="tools">Excel (functions only)</p>
         <a href="https://github.com/joserodrigodiga/excel-menu-performance-analysis"><img class="thumb" src="excel-db-thumbnail.png" alt="Excel dashboard with KPIs, candidates and charts" loading="lazy"></a>
         <p>Cleaned and checked the data, then ranked sandwiches and rice toppers on average daily units, trend and consistency. Compared add-on and overload value across items. Built a dashboard with KPIs, candidates and 3 charts.</p>
-        <span class="status">Complete</span> &middot;
-        <a href="https://github.com/joserodrigodiga/excel-menu-performance-analysis">View on GitHub</a>
+        <div class="card-foot">
+         <span class="status">Complete</span> &middot;
+         <a href="https://github.com/joserodrigodiga/excel-menu-performance-analysis">View on GitHub</a>
+        </div>
       </div>
 
       <div class="project">
@@ -177,15 +181,19 @@ p,li{max-width:70ch}
         <p class="tools">SQL (SQLite)</p>
         <a href="https://github.com/joserodrigodiga/sql-menu-questions"><img class="thumb" src="sql-trend-thumbnail.png" alt="SQL Trend query and result" loading="lazy"></a>
         <p>10 queries covering sales by category, top items, trend, consistency, zero-sale days and add-on value. Results are cross-checked against the Excel calculations.</p>
-        <span class="status">Complete</span> &middot;
-        <a href="https://github.com/joserodrigodiga/sql-menu-performance-analysis">View on GitHub</a>
+        <div class="card-foot">
+         <span class="status">Complete</span> &middot;
+         <a href="https://github.com/joserodrigodiga/sql-menu-performance-analysis">View on GitHub</a>
+        </div>
       </div>
 
       <div class="project todo">
         <h3>Part 3: Interactive Dashboard</h3>
         <p class="tools">Looker Studio, Google Sheets</p>
         <p>An interactive version of the analysis with date, category and item filters.</p>
-        <span class="status">In progress</span>
+        <div class="card-foot">
+         <span class="status">In progress</span>
+        </div>
       </div>
     </section>
 
