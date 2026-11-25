@@ -113,8 +113,8 @@ p,li{max-width:70ch}
   section{padding:2.5rem 0}
   }
 @media (min-width:900px){
-  .hero{display:grid; grid-template-columns:1fr 1.5fr; column-gap:3rem; align-items:center}
-  .hero > *{grid-column:2}
+  .hero{display:grid; grid-template-columns:1.5fr 1fr; column-gap:3rem; align-items:center}
+  .hero > *{grid-column:1}
   .hero .profile{grid-column:1; grid-row:1 / span 4; flex-direction:column; text-align:center; margin-bottom:0; justify-self:center}
   .hero .avatar{width:200px; height:200px}
   .hero .who{font-size:1.5rem}
@@ -125,6 +125,11 @@ p,li{max-width:70ch}
 .case .project.todo{background:transparent}
 .case h3.sub{font-family:Montserrat,system-ui,sans-serif; font-size:1.2rem; margin:1.75rem 0 .75rem}
 @media (min-width:900px){.case{padding:2rem}}
+.skill-group{margin-bottom:1.25rem}
+.skill-group h3{font-family:Montserrat,system-ui,sans-serif; font-size:1rem; color:var(--muted); margin:0 0 .5rem}
+.contact-card{background:var(--surface); border:1px solid var(--line); border-top:4px solid var(--accent); border-radius:12px; padding:2rem 1.25rem; text-align:center; box-shadow:0 4px 14px rgba(0,0,0,.12)}
+.contact-lead{font-size:1.05rem; margin:0 auto 1.5rem; max-width:48ch}
+.contact-card .btns{justify-content:center}
 </style>
 </head>
 <body>
@@ -225,26 +230,46 @@ p,li{max-width:70ch}
 
     <section id="skills">
       <h2>Skills</h2>
-      <ul class="skills">
-        <li>Excel</li>
-        <li>SQL</li>
-        <li>Looker Studio</li>
-        <li>Google Sheets</li>
-        <li>Data Analysis</li>
-        <li>Data cleaning</li>
-        <li>Dashboards</li>
-        <li>Business insights</li>
-      </ul>
+
+      <div class="skill-group">
+        <h3>Analysis tools</h3>
+        <ul class="skills">
+          <li>Excel</li>
+          <li>SQL (SQLite)</li>
+          <li>Google Sheets</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3>Visualization</h3>
+        <ul class="skills">
+          <li>Looker Studio</li>
+          <li>Excel dashboards</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3>Data work</h3>
+        <ul class="skills">
+          <li>Data cleaning</li>
+          <li>Data analysis</li>
+          <li>Trend analysis</li>
+          <li>Business insights</li>
+        </ul>
+      </div>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>Open to entry-level data analyst roles.</p>
-      <p>
-        <a href="mailto:joserodrigodiga@gmail.com">Email</a><br>
-        <a href="https://www.linkedin.com/in/jrdiga">LinkedIn</a><br>
-        <a href="https://github.com/joserodrigodiga">GitHub</a>
-      </p>
+      <div class="contact-card">
+        <p class="contact-lead">I'm open to entry-level data analyst roles. If you have any question about my projects, or a role that fits, I'd like to hear from you.</p>
+        <div class="btns">
+          <a class="btn primary" href="mailto:joserodrigodiga@gmail.com">Email me</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/jrdiga">LinkedIn</a>
+          <a class="btn ghost" href="https://github.com/joserodrigodiga">GitHub</a>
+        </div>
+        <p class="contact-meta">Based in the Philippines. I usually reply within a day.</p>
+      </div>
     </section>
 
   </div>
