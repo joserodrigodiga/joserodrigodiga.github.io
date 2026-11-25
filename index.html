@@ -88,6 +88,8 @@ section{scroll-margin-top:70px}
 .who{display:block; font-family:Montserrat,sans-serif; font-size:1.2rem; font-weight:700}
 .role{display:block; color:var(--accent); font-size:.85rem; font-weight:600}
 .tools-line{display:block; color:var(--muted); font-size:.85rem; margin-top:.15rem}
+.btn.primary{box-shadow:0 0 12px var(--accent); box-shadow:0 0 14px color-mix(in srgb, var(--accent) 60%, transparent)}
+.btn.primary:hover{box-shadow:0 0 22px var(--accent); box-shadow:0 0 24px color-mix(in srgb, var(--accent) 80%, transparent)}
 .btn{box-shadow:0 3px 10px rgba(0,0,0,.20); transition:transform .15s, box-shadow .15s}
 .btn:hover{transform:translateY(-2px); box-shadow:0 6px 14px rgba(0,0,0,.2)}
 @media (prefers-color-scheme:dark){.btn{box-shadow:0 3px 10px rgba(0,0,0,.5)}}
@@ -129,6 +131,7 @@ p,li{max-width:70ch}
 .skill-group h3{font-family:Montserrat,system-ui,sans-serif; font-size:1rem; color:var(--muted); margin:0 0 .5rem}
 .contact-card{background:var(--surface); border:1px solid var(--line); border-top:4px solid var(--accent); border-radius:12px; padding:2rem 1.25rem; text-align:center; box-shadow:0 4px 14px rgba(0,0,0,.12)}
 .contact-lead{font-size:1.05rem; margin:0 auto 1.5rem; max-width:48ch}
+.contact-card .btns + .btns{margin-top:.75rem}
 .contact-card .btns{justify-content:center}
 .contact-meta{color:var(--muted); font-size:.85rem; margin:1.25rem auto 0}
 </style>
@@ -265,7 +268,9 @@ p,li{max-width:70ch}
       <div class="contact-card">
         <p class="contact-lead">I'm open to entry-level data analyst roles. If you have any question about my projects, or a role that fits, I'd like to hear from you.</p>
         <div class="btns">
-          <a class="btn primary" href="mailto:joserodrigodiga@gmail.com">Email me</a>
+          <a class="btn primary" href="mailto:joserodrigodiga@gmail.com">joserodrigodiga@gmail.com</a>
+        </div>
+        <div class="btns">
           <a class="btn ghost" href="https://www.linkedin.com/in/jrdiga">LinkedIn</a>
           <a class="btn ghost" href="https://github.com/joserodrigodiga">GitHub</a>
         </div>
