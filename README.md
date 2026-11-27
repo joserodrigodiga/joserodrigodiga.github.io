@@ -9,10 +9,10 @@ Portfolio website of JR, an aspiring data analyst.
 
 - Part 1: [Menu Performance Analysis (Excel)](https://github.com/joserodrigodiga/excel-menu-performance-analysis)
 - Part 2: [SQL Menu Questions (SQL)](https://github.com/joserodrigodiga/sql-menu-questions)
-- Part 3: Interactive Dashboard (Looker Studio), in progress
+- Part 3: Interactive Dashboard (Data Studio), in progress
 
 ## Tools
-Excel, SQL, Looker Studio
+Excel, SQL, Data Studio
 
 ## About this site
 Built with HTML and CSS, and hosted on GitHub Pages.
