@@ -111,6 +111,12 @@ p,li{max-width:70ch}
 .cards .project p:not(.tools){font-size:.95rem}
 .cards .project{display:flex; flex-direction:column}
 .card-foot{margin-top:auto; padding-top:.75rem}
+.swipe-hint{display:none}
+@media (max-width:899px){
+  .swipe-hint{display:block; font-size:.85rem; color:var(--muted); margin:0 0 .5rem}
+  .case .cards{display:flex; gap:1rem; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:.75rem}
+  .case .cards .project{flex:0 0 85%; scroll-snap-align:start; margin-bottom:0}
+}
 @media (min-width:900px){
   body{font-size:1.05rem}
   .hero{padding:5rem 0 3.5rem}
@@ -158,6 +164,9 @@ p,li{max-width:70ch}
 }
 :root[data-theme="dark"] .theme-btn .sun{display:none}
 :root[data-theme="dark"] .theme-btn .moon{display:block}
+.js .reveal{opacity:0; transform:translateY(24px); transition:opacity .6s ease, transform .6s ease}
+.js .reveal.visible{opacity:1; transform:none}
+@media (prefers-reduced-motion:reduce){.js .reveal{opacity:1; transform:none; transition:none}}
 </style>
 </head>
 <body>
@@ -209,7 +218,8 @@ p,li{max-width:70ch}
         <p>A 3-part analysis of 13 months of daily sales to help choose items for the new store planned to open in 2027.</p>
         <p class="data-note"><strong>Data note:</strong> Figures are scaled to protect the business owner's financial information. Rankings, trends and shares reflect the real patterns.</p>
       </div>
-
+      
+      <p class="swipe-hint">Swipe to see all 3 parts →</p>
       <div class="cards">
       <div class="project">
         <h3>Part 1: Excel Menu Performance Analysis</h3>
@@ -305,7 +315,7 @@ p,li{max-width:70ch}
           <a class="btn ghost" href="https://www.linkedin.com/in/jrdiga">LinkedIn</a>
           <a class="btn ghost" href="https://github.com/joserodrigodiga">GitHub</a>
         </div>
-        <p class="contact-meta">Based in the Philippines. I usually reply within a day.</p>
+        <p class="contact-meta">Based in Sta. Cruz, Laguna, Philippines. I usually reply within a day.</p>
       </div>
     </section>
 
@@ -345,5 +355,20 @@ p,li{max-width:70ch}
 })();
 </script>
 
+<script>
+(function(){
+  var els=document.querySelectorAll('main section');
+  if(!('IntersectionObserver' in window)){return;}
+  document.documentElement.classList.add('js');
+  els.forEach(function(e){e.classList.add('reveal');});
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){en.target.classList.add('visible'); io.unobserve(en.target);}
+    });
+  },{threshold:0.05});
+  els.forEach(function(e){io.observe(e);});
+})();
+</script>
+ 
 </body>
 </html>
